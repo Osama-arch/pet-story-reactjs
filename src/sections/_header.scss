@@ -1,0 +1,71 @@
+@mixin text-gradient {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin border-gradient {
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%) border-box;
+}
+%text-gradient {
+  @include text-gradient;
+}
+%border-gradient {
+  @include border-gradient;
+}
+.container {
+  max-width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header__container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  z-index: 1;
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .header__container {
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .navbar-desc,
+  .designed-by {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    height: 34px;
+  }
+  .header__container {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__container {
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+  }
+}

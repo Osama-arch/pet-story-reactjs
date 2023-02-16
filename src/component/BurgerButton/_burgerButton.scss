@@ -1,0 +1,39 @@
+.burger-button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  width: 18px;
+  height: 10px;
+  z-index: 3;
+  .burger-icon:hover,
+  .close-icon:hover {
+    fill: url(#my-cool-gradient);
+  }
+  .burger-icon {
+    fill: #fff;
+  }
+}
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+@media only screen and (min-width: 861px) {
+  .burger-button {
+    display: none;
+  }
+}

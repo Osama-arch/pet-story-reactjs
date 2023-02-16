@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './sections/Header';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Donate from './pages/Donate';
@@ -7,13 +8,16 @@ import Zoos from './pages/Zoos';
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path='/' element={<About />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/Donate' element={<Donate />} />
-        <Route path='/Map' element={<Map />} />
-        <Route path='/Zoos' element={<Zoos />} />
-      </Routes>
+      <Header />
+      <main>
+        <Routes>
+          <Route path='/' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/donate' element={<Donate />} />
+          <Route path='/map' element={<Map />} />
+          <Route path='/zoos' element={<Zoos />} />
+        </Routes>
+      </main>
     </Router>
   );
 }

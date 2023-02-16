@@ -1,0 +1,199 @@
+.pets {
+  padding-top: 86px;
+  padding-bottom: 100px;
+  background: url(../../assests/images/flower1_big.png) no-repeat left bottom,
+    url(../../assests/images/flower2_big.png) no-repeat right bottom;
+  &__container {
+    text-align: center;
+    &__animals-slider {
+      margin-bottom: 80px;
+    }
+  }
+}
+.animals-slider {
+  --card-width: 366px;
+  --card-height: 426px;
+  --row-gap: 20px;
+  --column-gap: 30px;
+  width: calc(var(--card-width) * 3 + var(--column-gap) * 2);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  &__frame {
+    position: relative;
+    width: 100%;
+    height: calc((var(--card-height) * 2 + var(--row-gap)));
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  &__cards {
+    position: absolute;
+    width: calc(var(--card-width) * 3 + var(--column-gap) * 2 + 0px);
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--row-gap) var(--column-gap);
+    transition: all 0.2s linear;
+
+    &.activeSlide {
+      transform: translateX(0);
+      transition: all 0.6s linear;
+    }
+    &.lastSlide {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: all 0.5s ease-out;
+    }
+    &.nextSlide {
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 0.5s ease-out;
+    }
+  }
+  &__controls {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 50%;
+  }
+
+  &__prev-button,
+  &__next-button {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #f9804b, #fe9013);
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  &__prev-button::before,
+  &__next-button::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    display: block;
+    width: 16px;
+    height: 8px;
+  }
+  &__prev-button:hover,
+  &__next-button:hover {
+    background: #e47209;
+  }
+  &__prev-button:active,
+  &__next-button:active {
+    background: #4b9200;
+  }
+  &__prev-button {
+    left: -82px;
+    &::before {
+      background: url(../../assests/svg/prev.svg) no-repeat;
+      background-size: cover;
+    }
+  }
+  &__next-button {
+    right: -82px;
+    &::before {
+      background: url(../../assests/svg/next.svg) no-repeat;
+      background-size: cover;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .pets {
+    background: url(../../assests/images/flower1_middle.png) no-repeat left
+        bottom,
+      url(../../assests/images/flower2_middle.png) no-repeat right bottom;
+  }
+  .animals-slider {
+    --row-gap: 92px;
+    --column-gap: 29px;
+    &__prev-button {
+      left: calc(var(--card-width) + var(--column-gap));
+    }
+    &__next-button {
+      right: calc(var(--card-width) + var(--column-gap));
+    }
+  }
+}
+@media (max-width: 1260px) {
+  .pets {
+    padding-top: 68px;
+    padding-bottom: 140px;
+  }
+  .animals-slider {
+    --card-width: 295px;
+    --card-height: 354px;
+  }
+}
+@media (max-width: 999px) {
+  .pets {
+    padding-top: 9px;
+    padding-bottom: 100px;
+    background: url(../../assests/images/flower1_small.png) no-repeat left
+        bottom,
+      url(../../assests/images/flower2_small.png) no-repeat right bottom;
+  }
+  .animals-slider {
+    --card-width: 293px;
+    --card-height: 354px;
+    width: calc(var(--card-width) * 2 + var(--column-gap) * 1);
+    &__cards {
+      width: calc(var(--card-width) * 2 + var(--column-gap) * 1);
+    }
+    &__prev-button {
+      left: calc(var(--card-width));
+      transform: translate(-100%, -50%);
+    }
+    &__next-button {
+      right: calc(var(--card-width));
+      transform: translate(100%, -50%);
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .pets__animals-slider {
+    margin-bottom: 60px;
+  }
+  .animals-slider {
+    --card-width: 285px;
+    --card-height: 332px;
+    &__controls {
+      top: 49.5%;
+    }
+  }
+}
+@media (max-width: 639px) {
+  .pets {
+    padding-bottom: 60px;
+    background: url(../../assests/images/flower1_very_small.png) no-repeat left
+        bottom,
+      url(../../assests/images/flower2_very_small.png) no-repeat right
+        calc(100% - -4px);
+    &__animals-slider {
+      margin-bottom: 19px;
+    }
+  }
+  .animals-slider {
+    --row-gap: 20px;
+    width: var(--card-width);
+    &__frame {
+      width: var(--card-width);
+      height: calc(var(--card-height) * 4 + var(--row-gap) * 3);
+    }
+    &__cards {
+      width: var(--card-width);
+    }
+    &__controls {
+      display: none;
+    }
+  }
+}
