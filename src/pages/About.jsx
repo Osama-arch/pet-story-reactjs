@@ -4,6 +4,7 @@ import Backstage from '../sections/about/Backstage';
 import Pets from '../sections/about/Pets';
 import PickAndFeed from '../sections/about/PickAndFeed';
 import Testimonials from '../sections/about/Testimonials';
+import { AppProvider } from '../contex/ModalContext';
 function About() {
   return (
     <>
@@ -11,7 +12,9 @@ function About() {
       <Backstage />
       <Pets />
       <PickAndFeed />
-      <Testimonials />
+      <AppProvider>
+        <Testimonials />
+      </AppProvider>
     </>
   );
 }

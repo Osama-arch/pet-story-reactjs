@@ -67,7 +67,9 @@ function Pets() {
               }}></div>
           </div>
         </div>
-        <Link to='/map' className='pets__favorite-button' />
+        <Link to='/map' className='pets__favorite-button'>
+          choose your favorite
+        </Link>
       </div>
     </section>
   );

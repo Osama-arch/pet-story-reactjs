@@ -33,6 +33,13 @@
       no-repeat center center;
     background-size: contain;
   }
+  &_meet::after {
+    right: 8px;
+    bottom: 13px;
+    background: transparent url(../../assests/svg/meet-fish_icon.svg) no-repeat
+      center center;
+    background-size: contain;
+  }
   &__image-container {
     width: var(--card-width);
     height: var(--card-width);

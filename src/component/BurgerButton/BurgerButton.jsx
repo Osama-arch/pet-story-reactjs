@@ -5,7 +5,6 @@ import './_burgerButton.scss';
 const BurgerButton = ({ menuOpen, handleClick }) => {
   return (
     <>
-      {menuOpen && <div className='overlay' onClick={handleClick}></div>}
       <button onClick={handleClick} className={`burger-button`}>
         {menuOpen ? (
           <CloseMenu className='close-icon' />
@@ -13,7 +12,11 @@ const BurgerButton = ({ menuOpen, handleClick }) => {
           <BurgerMenu className='burger-icon' />
         )}
       </button>
-      {menuOpen && <NavBar className={'burger-menu'} />}
+      {menuOpen && (
+        <div className='overlay' onClick={handleClick}>
+          <NavBar className={'burger-menu'} />
+        </div>
+      )}
     </>
   );
 };
