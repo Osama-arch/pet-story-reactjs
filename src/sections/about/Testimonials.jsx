@@ -32,6 +32,7 @@ function Testimonials() {
               })}
             </div>
           </div>
+
           <input
             type='range'
             value={value}

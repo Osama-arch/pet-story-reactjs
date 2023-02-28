@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Zoos() {
+export default function Zoos() {
   return <div>Zoos</div>;
 }
-
-export default Zoos;

@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Donate from './pages/Donate';
 import Map from './pages/Map';
 import Zoos from './pages/Zoos';
+import Footer from './sections/Footer';
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
           <Route path='/zoos' element={<Zoos />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }

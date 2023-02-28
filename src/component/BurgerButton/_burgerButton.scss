@@ -11,10 +11,11 @@
   width: 18px;
   height: 10px;
   z-index: 3;
-  .burger-icon:hover,
+
   .burger-icon {
     fill: #fff;
   }
+  .burger-icon:hover,
   .close-icon:hover {
     fill: url(#my-cool-gradient);
   }

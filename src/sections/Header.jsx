@@ -4,7 +4,7 @@ import BurgerButton from '../component/BurgerButton/BurgerButton';
 import NavBar from '../component/navBar/NavBar';
 import Logo from '../component/logo/Logo';
 
-function Header() {
+export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const handleClick = () => {
@@ -23,12 +23,13 @@ function Header() {
   return (
     <header>
       <div className='header__container container'>
-        <Logo className={menuOpen ? 'logo logo-burger' : 'logo logo-mobile'} />
-        <NavBar className={'nav-container'} />
+        <Logo
+          className={menuOpen ? 'logo logo-burger' : 'logo logo-mobile'}
+          type={'header'}
+        />
+        <NavBar className={'nav-container'} type={'header'} />
         <BurgerButton menuOpen={menuOpen} handleClick={handleClick} />
       </div>
     </header>
   );
 }
-
-export default Header;

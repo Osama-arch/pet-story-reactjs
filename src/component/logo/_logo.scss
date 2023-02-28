@@ -16,6 +16,7 @@
   @include border-gradient;
 }
 .logo {
+  max-width: 83px;
   height: 52px;
   border: 1px solid white;
   border-radius: 2px;
@@ -26,7 +27,6 @@
   }
   a {
     position: relative;
-    width: 82px;
     height: 100%;
     text-align: center;
     display: flex;

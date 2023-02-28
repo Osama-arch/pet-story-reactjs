@@ -21,7 +21,7 @@ button:focus {
   background: url(../../assests/images/giant-panda-bg.png) no-repeat center
     bottom;
   background-size: cover;
-  padding-top: 94px;
+  padding-top: 89px;
   padding-bottom: 100px;
   &__container {
     padding-right: 108px;
@@ -29,7 +29,7 @@ button:focus {
     margin-right: auto;
   }
   &__title-wrapper {
-    margin-bottom: 69px;
+    margin-bottom: 72px;
     margin-left: auto;
     background: linear-gradient(to right, #f9804b, #fe9013);
     width: 465px;
@@ -59,9 +59,13 @@ button:focus {
     margin-right: -10px;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     letter-spacing: -0.8px;
-  }
-  &__online-button:hover {
-    background: #e47209;
+
+    &:hover {
+      background: #e47209;
+    }
+    &:active {
+      background: #4b9200;
+    }
   }
 }
 
@@ -75,8 +79,8 @@ button:focus {
     &__title-wrapper {
       width: 367px;
       height: 367px;
-      margin-bottom: 48px;
-      margin-top: -12px;
+      margin-bottom: 47px;
+      margin-top: -13px;
     }
     &__title {
       top: 54px;
@@ -116,10 +120,10 @@ button:focus {
     }
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 639px) {
   .hero {
-    padding-top: 20px;
-    padding-bottom: 27px;
+    padding-top: 22px;
+    padding-bottom: 26px;
     position: relative;
     top: 34px;
     &__container {
@@ -141,7 +145,7 @@ button:focus {
     }
     &__online-button {
       position: absolute;
-      bottom: -121px;
+      bottom: -120px;
       left: 50%;
       transform: translateX(-50%);
     }

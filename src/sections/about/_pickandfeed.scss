@@ -38,15 +38,15 @@
     text-align: center;
     font-weight: 400;
     font-size: 48px;
-    line-height: 120%;
+    line-height: 58px;
     color: #fe9013;
   }
   &__subtitle {
     margin: 0;
     margin-left: 99px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     font-weight: 400;
-    line-height: 120%;
+    line-height: 29px;
     font-size: 24px;
   }
   &__p1 {
@@ -55,7 +55,7 @@
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 130%;
+    line-height: 21px;
   }
   &__p2 {
     margin: 0;
@@ -63,21 +63,15 @@
     margin-bottom: 60px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 130%;
-  }
-  a {
-    color: #333b41;
-    text-decoration-color: #fe9013;
-  }
-  a:visited {
-    color: #333b41;
+    line-height: 21px;
   }
   &__how-works {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
     font-weight: 400;
     font-size: 36px;
+    line-height: 47px;
     // Scheme
     &-scheme {
       margin: 0;
@@ -91,7 +85,7 @@
       .how-works-card {
         width: 168px;
         &__picture {
-          margin-bottom: 30px;
+          margin-bottom: 28px;
           width: 100%;
           height: 168px;
           border-radius: 5px;
@@ -135,6 +129,9 @@
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    &:hover {
+      background: #e47209;
+    }
   }
 }
 @media (max-width: 1260px) {
@@ -142,27 +139,31 @@
     padding: 30px 30px 50px 30px;
     &__container {
       width: 940px;
-      padding-top: 32px;
+      padding-top: 30px;
       padding-bottom: 50px;
     }
     &__title {
-      margin-bottom: 23px;
+      margin-bottom: 20px;
+      line-height: 58px;
     }
     &__subtitle {
-      margin-left: 49px;
-      margin-bottom: 21px;
+      margin-left: 48px;
+      margin-bottom: 20px;
+      line-height: 29px;
     }
     &__p1 {
-      margin-left: 49px;
+      margin-left: 48px;
       max-width: 813px;
+      line-height: 21px;
     }
     &__p2 {
-      margin-left: 49px;
-      margin-bottom: 43px;
+      margin-left: 48px;
+      margin-bottom: 40px;
+      line-height: 21px;
       max-width: 813px;
     }
     &__how-works-scheme {
-      margin-bottom: 71px;
+      margin-bottom: 70px;
     }
   }
 }
@@ -170,34 +171,39 @@
   .pickandfeed {
     padding: 20px 0 20px 0;
     &__container {
-      width: 100%;
-      padding-top: 11px;
+      max-width: 600px;
+      padding-top: 10px;
       padding-bottom: 60px;
     }
     &__title {
       margin-bottom: 20px;
       font-size: 42px;
+      line-height: 50px;
     }
     &__subtitle {
-      margin-left: 19px;
-      margin-bottom: 19px;
+      margin-left: 20px;
+      margin-bottom: 20px;
       max-width: 600px;
       letter-spacing: -0.9px;
+      line-height: 26px;
     }
     &__p1 {
       margin-left: 20px;
-      margin-bottom: 11px;
+      margin-bottom: 10px;
       max-width: 600px;
+      line-height: 21px;
     }
     &__p2 {
       margin-left: 20px;
-      margin-bottom: 33px;
+      margin-bottom: 30px;
       max-width: 600px;
+      line-height: 21px;
     }
     &__how-works {
-      margin-bottom: 21px;
+      margin-bottom: 20px;
+      line-height: 47px;
       &-scheme {
-        margin-bottom: 41px;
+        margin-bottom: 40px;
         width: 600px;
         -moz-column-gap: 42px;
         column-gap: 42px;
@@ -217,19 +223,23 @@
   .pickandfeed {
     padding: 20px 10px 20px 10px;
     &__container {
-      padding-top: 21px;
+      max-width: 300px;
+      padding-top: 20px;
       padding-bottom: 40px;
     }
     &__title {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       font-size: 24px;
+      line-height: 29px;
     }
     &__subtitle {
+      max-width: 297px;
       margin-left: -1px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       font-size: 18px;
       text-align: center;
       letter-spacing: 0.1px;
+      line-height: 22px;
     }
     &__p1 {
       display: none;
@@ -239,14 +249,16 @@
     }
     &__how-works {
       margin-bottom: 20px;
+      line-height: 29px;
       font-size: 24px;
       &-scheme {
-        margin-bottom: 38px;
+        margin-bottom: 39px;
         width: 168px;
         flex-direction: column;
         row-gap: 42px;
+        line-height: 22px;
         &-card:nth-child(3) {
-          margin-top: -24px;
+          margin-top: -13px;
         }
         .how-works-card__picture {
           margin-bottom: 10px;

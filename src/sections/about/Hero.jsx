@@ -1,5 +1,6 @@
 import React from 'react';
 import './_hero.scss';
+import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <section className='hero'>
@@ -9,7 +10,7 @@ function Hero() {
             Watch your <span>favorite</span> animal online
           </h2>
         </div>
-        <button className='hero__online-button'>watch online</button>
+        <Link className='hero__online-button'>watch online</Link>
       </div>
     </section>
   );

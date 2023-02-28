@@ -1,8 +1,7 @@
 .backstage {
   padding-top: 140px;
   padding-bottom: 90px;
-  background: url(../../assests/images/flower_foto1.png) no-repeat calc(100%)
-    12px;
+  background: url(../../assests/images/flower_foto1.png) no-repeat 100%;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -17,6 +16,7 @@
     }
   }
   &__text {
+    margin-top: -10px;
     width: 465px;
     font-weight: 400;
     color: #333b41;
@@ -30,30 +30,31 @@
   &__description {
     margin-bottom: 54px;
     font-size: 16px;
-    line-height: 130%;
+    line-height: 21px;
   }
-  &__details-title {
+  &__details-titles {
     margin-bottom: 34px;
     font-size: 24px;
     font-weight: 400;
+    line-height: 29px;
   }
   &__details-description {
     font-size: 16px;
-    line-height: 22.4px;
+    line-height: 22px;
   }
 }
 @media (max-width: 1600px) {
   .backstage {
     padding-top: 140px;
-    padding-bottom: 90px;
+    padding-bottom: 180px;
     background: url(../../assests/images/flower_foto1.png) no-repeat
       calc(1600px - 12.75vw) 12px;
   }
 }
 @media (max-width: 1260px) {
   .backstage {
-    padding-top: 109px;
-    padding-bottom: 71px;
+    padding-top: 110px;
+    padding-bottom: 142px;
     background: transparent;
     &__container {
       width: 940px;
@@ -66,8 +67,8 @@
       width: 455px;
     }
     &__title {
-      margin-top: -10px;
-      margin-bottom: 23px;
+      line-height: 58px;
+      margin-bottom: 20px;
     }
     &__details-title {
       margin-bottom: 35px;
@@ -89,16 +90,19 @@
       display: none;
     }
     &__description {
-      margin-left: -4px;
-      margin-bottom: 29px;
+      line-height: 21px;
+      margin-bottom: 30px;
     }
-    &__details-title {
-      margin-bottom: 21px;
+    &__details-titles {
+      line-height: 29px;
+      margin-bottom: 20px;
     }
     &__details-description {
       width: 495px;
-      margin-left: -4px;
       line-height: 22px;
+    }
+    &__text {
+      margin-top: -10px;
     }
   }
 }
@@ -109,37 +113,38 @@
       calc(640px - 1vw) 12px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .backstage {
-    padding-bottom: 48px;
-    background: url(../../assests/images/flower_foto1.png) no-repeat
-      calc(500px - 1vw) 0;
-    background-size: 25%;
-  }
-}
-@media (max-width: 576px) {
-  .backstage {
-    padding-top: 140px;
-    padding-left: 11px;
+    padding-top: 148px;
+    padding-bottom: 40px;
+    padding-left: 12px;
     padding-right: 12px;
     background: url(../../assests/images/flower_foto1.png) no-repeat 116% 72px;
     background-size: 22%;
+    &__container {
+      max-width: 300px;
+    }
     &__text {
       width: auto;
     }
     &__title {
-      margin-top: -4px;
-      margin-bottom: 9px;
+      margin-top: 0px;
+      margin-bottom: 10px;
       max-width: 300px;
       font-size: 24px;
+      line-height: 29px;
     }
     &__description {
       margin-left: 0;
-      margin-bottom: 21px;
+      margin-bottom: 20px;
       max-width: 300px;
+      line-height: 21px;
     }
-    &__details-title {
+    &__details-titles {
       margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
     }
     &__details-description {
       width: auto;

@@ -1,0 +1,37 @@
+.panda__container {
+  background: #000;
+  padding-top: 80px;
+}
+.panda {
+  height: 386px;
+  background: url(../../assests/images/panda-bg-big.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media (max-width: 1260px) {
+  .panda {
+    height: 390px;
+    background: url(../../assests/images/panda-bg-big.jpg) no-repeat center
+      center;
+    background-size: cover;
+  }
+}
+@media (max-width: 999px) {
+  .panda__container {
+    background: #000;
+    padding-top: 34px;
+  }
+  .panda {
+    height: 369px;
+    background: url(../../assests/images/panda-bg-big.jpg) no-repeat center
+      center;
+    background-size: cover;
+  }
+}
+@media (max-width: 639px) {
+  .panda {
+    height: 221px;
+    background: url(../../assests/images/panda-bg-big.jpg) no-repeat center
+      center;
+    background-size: cover;
+  }
+}

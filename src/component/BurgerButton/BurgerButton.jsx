@@ -14,7 +14,7 @@ const BurgerButton = ({ menuOpen, handleClick }) => {
       </button>
       {menuOpen && (
         <div className='overlay' onClick={handleClick}>
-          <NavBar className={'burger-menu'} />
+          <NavBar className={'burger-menu'} type={'header'} />
         </div>
       )}
     </>

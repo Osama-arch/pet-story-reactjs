@@ -16,8 +16,8 @@ function PickAndFeed() {
         </p>
         <p className='pickandfeed__p2'>
           Even though the zoo has reopened, we need you now more than ever to
-          help us deal with these problems. Please consider <br />a gift to our{' '}
-          <Link to='./donate'>Emergency Support Fund</Link> .
+          help us deal with these problems. Please consider a gift to our
+          <Link to='./donate'> Emergency Support Fund</Link> .
         </p>
         <h3 className='pickandfeed__how-works'>How it works</h3>
 
@@ -39,7 +39,9 @@ function PickAndFeed() {
             </div>
           </div>
         </figure>
-        <button className='pickandfeed__feed-button'>Feed a friend now</button>
+        <Link to='/' className='pickandfeed-donate__feed-button'>
+          Feed a friend now
+        </Link>
       </div>
     </section>
   );
