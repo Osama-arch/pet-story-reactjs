@@ -15,10 +15,10 @@ function NavBar({ className, type }) {
             </Link>
           </li>
           <li>
-            <Link to='/comingsoon'>Map</Link>
+            <Link to='/'>Map</Link>
           </li>
           <li>
-            <Link to='/comingsoon'>Zoos</Link>
+            <Link to='/'>Zoos</Link>
           </li>
           {type === 'header' && (
             <li>
@@ -30,7 +30,7 @@ function NavBar({ className, type }) {
             </li>
           )}
           <li>
-            <Link to='/comingsoon'>Contact Us</Link>
+            <Link to='/'>Contact Us</Link>
           </li>
         </ul>
       </nav>

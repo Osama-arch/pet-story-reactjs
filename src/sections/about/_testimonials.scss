@@ -325,7 +325,7 @@ input[type='range']:disabled {
     flex-direction: column;
     width: 100%;
     row-gap: var(--row-gap);
-    height: calc(var(--card-height) * 5 + var(--row-gap) * 4);
+    height: calc((var(--card-height) * 5)+ (var(--row-gap) * 4));
   }
   .testimonials-slider-card {
     padding-left: 10px;
@@ -333,7 +333,7 @@ input[type='range']:disabled {
   }
   .move {
     transform: translateX(
-      calc(- (var(--card-width) + var(--column-gap)) * var(--position))
+      calc((-1 * var(--card-width)) - (var(--column-gap) * var(--position)))
     );
     transition: transform 0.8s ease-in;
   }
