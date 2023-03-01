@@ -15,18 +15,10 @@ function NavBar({ className, type }) {
             </Link>
           </li>
           <li>
-            <Link
-              to='/map'
-              className={location.pathname === '/map' ? 'active' : null}>
-              Map
-            </Link>
+            <Link to='/comingsoon'>Map</Link>
           </li>
           <li>
-            <Link
-              to='/zoos'
-              className={location.pathname === '/zoos' ? 'active' : null}>
-              Zoos
-            </Link>
+            <Link to='/comingsoon'>Zoos</Link>
           </li>
           {type === 'header' && (
             <li>
@@ -38,11 +30,7 @@ function NavBar({ className, type }) {
             </li>
           )}
           <li>
-            <Link
-              to='/contact'
-              className={location.pathname === '/contact' ? 'active' : null}>
-              Contact Us
-            </Link>
+            <Link to='/comingsoon'>Contact Us</Link>
           </li>
         </ul>
       </nav>

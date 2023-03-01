@@ -6,7 +6,7 @@ import Testimonials from '../sections/about/Testimonials';
 import { AppProvider } from '../contex/ModalContext';
 export default function About() {
   return (
-    <>
+    <main>
       <Hero />
       <Backstage />
       <Pets />
@@ -14,6 +14,6 @@ export default function About() {
       <AppProvider>
         <Testimonials />
       </AppProvider>
-    </>
+    </main>
   );
 }
