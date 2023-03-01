@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pet-story-reactjs/static/css/main.c8bec05d.css",
+    "main.css": "/pet-story-reactjs/static/css/main.2b111219.css",
     "main.js": "/pet-story-reactjs/static/js/main.6b1b0f7b.js",
     "static/js/787.e931f6d7.chunk.js": "/pet-story-reactjs/static/js/787.e931f6d7.chunk.js",
     "static/media/giant-panda-bg.png": "/pet-story-reactjs/static/media/giant-panda-bg.5ec032fb4c9b94c8b1a6.png",
@@ -47,12 +47,12 @@
     "static/media/burger_menu.svg": "/pet-story-reactjs/static/media/burger_menu.3f3e63d6f25ef22bc7b350f5730dd3bf.svg",
     "static/media/facebook.svg": "/pet-story-reactjs/static/media/facebook.de8ae2d27d96e8458777.svg",
     "static/media/amount_of_days_donate.svg": "/pet-story-reactjs/static/media/amount_of_days_donate.d045745647fe3f52f01bc1b31bf8db04.svg",
-    "main.c8bec05d.css.map": "/pet-story-reactjs/static/css/main.c8bec05d.css.map",
+    "main.2b111219.css.map": "/pet-story-reactjs/static/css/main.2b111219.css.map",
     "main.6b1b0f7b.js.map": "/pet-story-reactjs/static/js/main.6b1b0f7b.js.map",
     "787.e931f6d7.chunk.js.map": "/pet-story-reactjs/static/js/787.e931f6d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8bec05d.css",
+    "static/css/main.2b111219.css",
     "static/js/main.6b1b0f7b.js"
   ]
 }
