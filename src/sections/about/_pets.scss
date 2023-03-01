@@ -209,7 +209,7 @@
     width: var(--card-width);
     &__frame {
       width: var(--card-width);
-      height: calc(var(--card-height) * 4 + var(--row-gap) * 3);
+      height: calc((var(--card-height) * 4)+ (var(--row-gap) * 3));
     }
     &__cards {
       width: var(--card-width);
