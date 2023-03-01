@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/petStory/static/css/main.e987151e.css",
-    "main.js": "/petStory/static/js/main.db05c056.js",
+    "main.js": "/petStory/static/js/main.b8a726c7.js",
     "static/js/787.e931f6d7.chunk.js": "/petStory/static/js/787.e931f6d7.chunk.js",
     "static/media/giant-panda-bg.png": "/petStory/static/media/giant-panda-bg.5ec032fb4c9b94c8b1a6.png",
     "static/media/bamboo.svg": "/petStory/static/media/bamboo.3d4ff5b4c2ec3221a966.svg",
@@ -48,11 +48,11 @@
     "static/media/facebook.svg": "/petStory/static/media/facebook.de8ae2d27d96e8458777.svg",
     "static/media/amount_of_days_donate.svg": "/petStory/static/media/amount_of_days_donate.d045745647fe3f52f01bc1b31bf8db04.svg",
     "main.e987151e.css.map": "/petStory/static/css/main.e987151e.css.map",
-    "main.db05c056.js.map": "/petStory/static/js/main.db05c056.js.map",
+    "main.b8a726c7.js.map": "/petStory/static/js/main.b8a726c7.js.map",
     "787.e931f6d7.chunk.js.map": "/petStory/static/js/787.e931f6d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e987151e.css",
-    "static/js/main.db05c056.js"
+    "static/js/main.b8a726c7.js"
   ]
 }
