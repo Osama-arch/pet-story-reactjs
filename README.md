@@ -2,11 +2,14 @@
 Open [https://osama-arch.github.io/petStory/](Live Demo) to view it in your browser.
 
 
-#Description:
+# Description:
 platform to gather information about animals. It is supposed that the user can open a page with the resources of the zoo, observe any of the animals or make a donation on which to buy food. I've created the main page, and the page with donates.
 
-#Screenshots:
-![First page](https://github.com/Osama-arch/petStory/blob/master/zoo.jpg)
+# Screenshots:
+### First page:
+![about page](https://github.com/Osama-arch/petStory/blob/master/zoo.jpg)
+### Donate page:
+![donate page](https://github.com/Osama-arch/petStory/blob/master/donate.jpg)
 
 # Getting Started with Create React App
 
