@@ -1,5 +1,5 @@
 # Demo project:
-Open  ## [Live Demo](https://osama-arch.github.io/petStory/)  to view it in your browser.
+Open <font size ='5'>[Live Demo](https://osama-arch.github.io/petStory/)</font> to view it in your browser.
 
 
 # Description:
