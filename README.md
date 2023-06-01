@@ -1,5 +1,5 @@
 # Demo project:
-Open <font size ='5'>[Live Demo](https://osama-arch.github.io/petStory/)</font> to view it in your browser.
+Open <span style="font-family:Papyrus; font-size:4em;">[Live Demo](https://osama-arch.github.io/petStory/)</span> to view it in your browser.
 
 
 # Description:
